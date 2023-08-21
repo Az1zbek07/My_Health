@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav.xml"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.healthyapp.fragment.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_firstTabFragment"
+            app:destination="@id/firstTabFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstTabFragment"
+        android:name="com.example.healthyapp.fragment.FirstTabFragment"
+        android:label="fragment_first_tab"
+        tools:layout="@layout/fragment_first_tab" >
+        <action
+            android:id="@+id/action_firstTabFragment_to_secondTabFragment"
+            app:destination="@id/secondTabFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondTabFragment"
+        android:name="com.example.healthyapp.fragment.SecondTabFragment"
+        android:label="fragment_second_tab"
+        tools:layout="@layout/fragment_second_tab" >
+        <action
+            android:id="@+id/action_secondTabFragment_to_thirdTabFragment"
+            app:destination="@id/thirdTabFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdTabFragment"
+        android:name="com.example.healthyapp.fragment.ThirdTabFragment"
+        android:label="fragment_third_tab"
+        tools:layout="@layout/fragment_third_tab" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.healthyapp.fragment.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.healthyapp.fragment.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+</navigation>
